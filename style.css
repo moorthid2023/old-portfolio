@@ -1,29 +1,105 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-@media only screen and ( max-width: 600px ) {
-    body{
-        background-color: yellow;
-        
-    }
+@media only screen and (max-width:600px){
+    /*
+    media query for mobile and less than desktop 
+    */
     *{
-        margin: 0;
+        
         padding: 0;
         /* background-color: tomato; */
     }
+    body{
+        font-family: sans-serif;
+        letter-spacing: 1px;
+        padding: 0 10px 50px 10px;
+    }
+    .name,.email, .phno {
+        text-align: center;       
+    }
+    .email a{
+        margin-top: 15px;
+        text-decoration: none;
+    }
+    .phno a{
+        text-decoration: none;
+    }
+    .phno a:hover{
+        background-color:rgba(0,0,254,0.5);
+        color: white;
+        padding: 7px;
+        border-radius: 15px;
+        text-decoration: none;
+    }
+    .email a:hover{
+        background-color: rgba(0,0,254,0.5);
+        color: white;
+        padding: 7px;
+        border-radius: 15px;
+    }
+    .left .profile .profileimage{
+        position: relative;
+        width: 15vh;
+        height: 15vh;
+        background-color: gray;
+        left: 40%;
+        border-radius: 50%;
+    }
+    .link{
+        position:fixed;
+        bottom: 0px;
+        background-color: white;
+        padding: 20px 0 30px 0;
+        width: 100%;
+    }
+    .link a{
+        font-size: 13px;
+        display: inline;
+        text-decoration: none;
+        font-weight: 500;
+        padding-left:10px ;
+        
+    }
+    .link a:hover{
+        background-color: blue;
+        color: white;
+        padding: 5px;
+        text-align: center;
+        border-radius: 5px;
+        
+    }
+    #exprience:target{
+        background-color: blue;
+        color: white;
+    }
+    #professionalskill:target{
+        background-color: blue;
+        color: white;
+    }
+
+    #workhistory:target{
+        background-color: blue;
+        color: white;
+    }
 
 }
 
-body{
+
+
+@media only screen and ( min-width: 600px ) {
+   
+/*
+media query for desktop
+*/
+
+
+ body{
+    background-color: white;
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    /* color: white; */
+    
     text-shadow: 6px 6px 12px black;
     
 }
-.profile{
+/* .profile{
     background-color:rgba(0,0,0,0.2);
     width: 200px;
     height:200px ;
@@ -36,6 +112,16 @@ body{
     position: relative;
     top: 25%;
     left: 25%;
+    translate: (-50%,-50%);
+} */
+.left .profile .profileimage{
+    background-color:rgba(0,0,0,0.2);
+    width: 200px;
+    height:200px ;
+    border-radius: 50%;
+    position: relative;
+    left: 25%;
+    margin-top: 10px;
     translate: (-50%,-50%);
 }
 .link{
@@ -61,7 +147,7 @@ body{
     text-shadow: 5px 12px 12px white;
 }
 #mailid{
-    /* color: yellow; */
+    
     text-decoration: none;
 }
 #mailid:hover{
@@ -73,12 +159,12 @@ body{
 }
 .container{
     display: flex;
-    /* background-color: tomato; */
+    
 }
 .right{
     position: relative;
     width: 70%;
-    /* background-color: rgba(0,0,256,0.6); */
+    
 
     padding-left: 10px ;
 }
@@ -87,5 +173,7 @@ body{
     width: 30%;
     padding-left: 10px;
     
-    /* background-color: rgba(254,0,0,0.6); */
+    
+} 
+
 }
