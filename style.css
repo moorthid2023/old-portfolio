@@ -1,5 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
+
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* color: white; */
+    text-shadow: 6px 6px 12px black;
     
+}
+.profile{
+    background-color:rgba(0,0,0,0.2);
+    width: 200px;
+    height:200px ;
+    border-radius: 50%;
+    position: relative;
+    left: 25%;
+    margin-top: 10px;
+}
+.profileimage{
+    position: relative;
+    top: 25%;
+    left: 25%;
+    translate: (-50%,-50%);
+}
+.link{
+    position:sticky;
+    top: 10px ;
+}
+.link a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 23px;
+    top: 50px;
+    padding-top: 40px;
+}
+.link a:hover{
+    background-color: blue;
+    color: white;
+    padding: 20px 0 20px 0;
+    border-radius: 25px;
+    text-shadow: 5px 12px 12px white;
+}
+#mailid{
+    /* color: yellow; */
+    text-decoration: none;
+}
+#mailid:hover{
+    background-color: blue;
+    color: white;
+    padding: 0px 0 5px 0;
+    border-radius: 10px;
+    text-shadow: 5px 12px 12px white;
+}
+.container{
+    display: flex;
+    /* background-color: tomato; */
+}
+.right{
+    position: relative;
+    width: 70%;
+    /* background-color: rgba(0,0,256,0.6); */
+
+    padding-left: 10px ;
+}
+.left{
+    position: relative;
+    width: 30%;
+    padding-left: 10px;
     
+    /* background-color: rgba(254,0,0,0.6); */
 }
