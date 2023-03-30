@@ -35,6 +35,20 @@
         padding: 7px;
         border-radius: 15px;
     }
+    .email img{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 15px;
+        
+    }
+    .phno img{
+        width: 50px;
+        height: 40px;
+        position: relative;
+        top: 10px;
+    }
+
     .left .profile .profileimage{
         position: relative;
         width: 15vh;
@@ -120,9 +134,10 @@ media query for desktop
     height:200px ;
     border-radius: 50%;
     position: relative;
-    left: 25%;
+    left: 15%;
     margin-top: 10px;
     translate: (-50%,-50%);
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.3);
 }
 .link{
     position:sticky;
@@ -140,22 +155,39 @@ media query for desktop
     padding-top: 40px;
 }
 .link a:hover{
-    background-color: blue;
-    color: white;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(10px);
+    color:black;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.3);
+    border: 1px solid rgba(254,254,254,0.3);
     padding: 20px 0 20px 0;
     border-radius: 25px;
     text-shadow: 5px 12px 12px white;
 }
-#mailid{
+#mailid,#phno a{
     
     text-decoration: none;
 }
 #mailid:hover{
-    background-color: blue;
-    color: white;
+    background-color: rgba(0,0,0,0.2);
+    color: black;
     padding: 0px 0 5px 0;
     border-radius: 10px;
     text-shadow: 5px 12px 12px white;
+    box-shadow: 0 20px 20px 0 rgba(0,0,0,0.3);
+}
+.email img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 15px;
+    
+}
+.phno img{
+    width: 50px;
+    height: 40px;
+    position: relative;
+    top: 10px;
 }
 .container{
     display: flex;
