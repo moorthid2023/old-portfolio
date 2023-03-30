@@ -56,6 +56,7 @@
         background-color: gray;
         left: 35%;
         border-radius: 50%;
+        box-shadow: 0 20px 20px 0 rgba(0,0,0,0.3);
     }
     .link{
         position:fixed;
